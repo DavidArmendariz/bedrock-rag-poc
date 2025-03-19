@@ -25,6 +25,7 @@ plugins = ["sqlmypy"]
 
 [tool.pdm.scripts]
 start = "uvicorn src.main:app --reload"
+check_types = "mypy src"
 
 [dependency-groups]
 dev = ["mypy>=1.15.0", "sqlalchemy-stubs>=0.4"]
